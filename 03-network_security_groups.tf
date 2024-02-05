@@ -82,9 +82,9 @@ resource "azurerm_network_security_group" "west_europe_nsg" {
   }
 }
 
-resource "azurerm_network_security_group" "southeast_asia_nsg" {
-  name                = "southeast-asia-nsg"
-  location            = azurerm_virtual_network.southeast_asia.location
+resource "azurerm_network_security_group" "west_us_nsg" {
+  name                = "west-us-nsg"
+  location            = azurerm_virtual_network.west_us.location
   resource_group_name = azurerm_resource_group.rg.name
 
   security_rule {

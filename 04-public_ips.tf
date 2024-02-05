@@ -12,9 +12,9 @@ resource "azurerm_public_ip" "west_europe_ip" {
   allocation_method   = "Dynamic"
 }
 
-resource "azurerm_public_ip" "southeast_asia_ip" {
-  name                = "southeast-asia-ip"
-  location            = azurerm_virtual_network.southeast_asia.location
+resource "azurerm_public_ip" "west_us_ip" {
+  name                = "west-us-ip"
+  location            = azurerm_virtual_network.west_us.location
   resource_group_name = azurerm_resource_group.rg.name
   allocation_method   = "Dynamic"
 }
